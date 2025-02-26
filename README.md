@@ -1,15 +1,16 @@
-Building Effective Search Systems HelpMateAI
+**Building Effective Search Systems HelpMateAI**
 
-1. Background
+**1. Background**
 This project demonstrate "Building Effective Search Systems HelpMateAI" with a long insurance policy document using RAG techniques.
 
-2. Problem Statement
+**2. Problem Statement**
 The goal of the project is to build a robust generative search system capable of effectively and accurately answering questions from a policy document.
 We will be using a single long life insurance policy document for this project.
 
-3. Document
+**3. Document**
 The policy document can be found [here](https://github.com/user-attachments/assets/9071b462-3dfe-4d40-80d9-4928cd89e746)
-4. Approach
+
+**4. Approach**
 The project should implement all the three layers effectively. It will be key to try out various strategies and experiments in various layers in order to build an effective search system. Let's explore what we need to do in each of the layers.
 
 The Embedding Layer: The PDF document needs to be effectively processed, cleaned, and chunked for the embeddings. Here, the choice of the chunking strategy will have a large impact on the final quality of the retrieved results. So, we need to make sure that we try out various stratgies and compare their performances.
@@ -24,7 +25,7 @@ Finally, we need to implement the re-ranking block, and for this we can choose f
 
 The Generation Layer: In the generation layer, the final prompt that we design is the major component. We need to make sure that the prompt is exhaustive in its instructions, and the relevant information is correctly passed to the prompt. We may also choose to provide some few-shot examples in an attempt to improve the LLM output.
 
-5. System Layers
+**5. System Layers**
 Reading & Processing PDF File: We will be using pdfplumber to read and process the PDF files. pdfplumber allows for better parsing of the PDF file as it can read various elements of the PDF apart from the plain text, such as, tables, images, etc. It also offers wide functionalities and visual debugging features to help with advanced preprocessing as well.
 
 Document Chunking: The document contains several pages and contains huge text, before generating the embeddings, we need to generate the chunks. Let's start with a basic chunking technique, and chunking the text with fixed size.
@@ -39,13 +40,13 @@ Re-Ranking with a Cross Encoder: Re-ranking the results obtained from the semant
 
 Retrieval Augmented Generation: Now we have the final top search results, we can pass it to an GPT 3.5 along with the user query and a well-engineered prompt, to generate a direct answer to the query along with citations.
 
-6. System Architecture
+**6. System Architecture**
 ![image](https://github.com/user-attachments/assets/3d6764ae-64cb-464f-8ba2-6e63c13c9f61)
 
-7. Prerequisites
+**7. Prerequisites**
 Python 3.7+
 Please ensure that you add your OpenAI API key to the empty text file named "OpenAI_API_Key" in order to access the OpenAI API.
 
-9. Query Screenshots
+**8. Query Screenshots**
 ![image](https://github.com/user-attachments/assets/19702f73-633b-4b28-bc95-0fde2b788409)
 
