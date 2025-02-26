@@ -1,4 +1,5 @@
 Building Effective Search Systems HelpMateAI
+
 1. Background
 This project demonstrate "Building Effective Search Systems HelpMateAI" with a long insurance policy document using RAG techniques.
 
@@ -40,4 +41,12 @@ Re-Ranking with a Cross Encoder: Re-ranking the results obtained from the semant
 Retrieval Augmented Generation: Now we have the final top search results, we can pass it to an GPT 3.5 along with the user query and a well-engineered prompt, to generate a direct answer to the query along with citations.
 
 6. System Architecture
+![image](https://github.com/user-attachments/assets/3d6764ae-64cb-464f-8ba2-6e63c13c9f61)
+
+7. Prerequisites
+Python 3.7+
+Please ensure that you add your OpenAI API key to the empty text file named "OpenAI_API_Key" in order to access the OpenAI API.
+
+9. Query Screenshots
+![image](https://github.com/user-attachments/assets/19702f73-633b-4b28-bc95-0fde2b788409)
 
