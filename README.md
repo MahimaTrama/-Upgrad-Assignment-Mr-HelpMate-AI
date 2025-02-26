@@ -5,7 +5,6 @@ This project demonstrate "Building Effective Search Systems HelpMateAI" with a l
 
 2. Problem Statement
 The goal of the project is to build a robust generative search system capable of effectively and accurately answering questions from a policy document.
-
 We will be using a single long life insurance policy document for this project.
 
 3. Document
